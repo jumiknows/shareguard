@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="t">
+<title id="t">ShareGuard icon</title>
+<defs><linearGradient id="g" x1="20" y1="20" x2="236" y2="236"><stop stop-color="#4f8cff"/><stop offset="1" stop-color="#865cff"/></linearGradient></defs>
+<rect x="8" y="8" width="240" height="240" rx="66" fill="url(#g)"/>
+<path d="M128 48 190 73v48c0 45-27 75-62 92-35-17-62-47-62-92V73z" fill="none" stroke="white" stroke-width="16" stroke-linejoin="round"/>
+<circle cx="128" cy="124" r="19" fill="white"/>
+<path d="M128 143v26" stroke="white" stroke-width="14" stroke-linecap="round"/>
+</svg>
