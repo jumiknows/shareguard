@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="860" viewBox="0 0 1500 860" role="img" aria-labelledby="t d">
+<title id="t">ShareGuard Privacy Studio</title><desc id="d">Apple-inspired ShareGuard interface with protected audience preview, automatic detection toggles, and manual blackout tools.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f8fb"/><stop offset="1" stop-color="#edf1f8"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5a78ed"/><stop offset="1" stop-color="#955de1"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#23304a" flood-opacity=".12"/></filter></defs>
+<rect width="1500" height="860" rx="30" fill="url(#bg)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+<rect width="1500" height="76" fill="#ffffff" opacity=".96"/><line x1="0" y1="76" x2="1500" y2="76" stroke="#e2e7f0"/>
+<rect x="34" y="18" width="42" height="42" rx="13" fill="url(#accent)"/><path d="M55 27 68 32v10c0 9-6 16-13 20-8-4-13-11-13-20V32z" fill="none" stroke="#fff" stroke-width="3"/>
+<text x="92" y="42" font-size="18" font-weight="750" fill="#172235">ShareGuard</text><text x="92" y="59" font-size="11" fill="#8992a3">Privacy Studio · local protection</text>
+<rect x="1240" y="22" width="220" height="34" rx="17" fill="#eef8f3"/><circle cx="1262" cy="39" r="6" fill="#20b57d"/><text x="1276" y="44" font-size="12" font-weight="700" fill="#27825f">Protected preview active</text>
+<text x="44" y="132" font-size="11" letter-spacing="2" font-weight="800" fill="#8b69c8">YOUR AUDIENCE VIEW</text>
+<text x="44" y="181" font-size="38" font-weight="760" fill="#182337">Share the moment.</text><text x="44" y="225" font-size="38" font-weight="760" fill="#6b78e2">Not your secrets.</text>
+<text x="44" y="253" font-size="14" fill="#7c8799">Your source tab stays unchanged. Share the protected preview below.</text>
+<g filter="url(#s)">
+<rect x="44" y="294" width="1010" height="510" rx="22" fill="#fff" stroke="#e0e5ee"/>
+<text x="72" y="332" font-size="14" font-weight="700" fill="#172235">Protected preview</text><circle cx="57" cy="326" r="6" fill="#20b57d"/>
+<text x="72" y="350" font-size="11" fill="#8c96a6">3 automatically hidden · 1 manually hidden</text>
+<rect x="72" y="377" width="954" height="340" rx="13" fill="#121823"/>
+<rect x="112" y="410" width="870" height="272" rx="14" fill="#202a38"/>
+<text x="142" y="448" fill="#fff" font-size="28" font-weight="700">Account settings</text>
+<text x="142" y="496" fill="#b9c7da" font-size="16">Password</text><rect x="300" y="472" width="270" height="34" rx="7" fill="#0b0f16"/>
+<text x="142" y="548" fill="#b9c7da" font-size="16">API token</text><rect x="300" y="524" width="410" height="34" rx="7" fill="#0b0f16"/>
+<text x="142" y="600" fill="#b9c7da" font-size="16">Credit card</text><rect x="300" y="576" width="330" height="34" rx="7" fill="#0b0f16"/>
+<text x="142" y="652" fill="#b9c7da" font-size="16">Display name</text><text x="300" y="652" fill="#ecf2fb" font-size="16">Ernest Example</text>
+<rect x="735" y="604" width="170" height="58" rx="5" fill="#0b0f16" stroke="#69a0ff" stroke-width="2"/><circle cx="735" cy="604" r="5" fill="#69a0ff"/><circle cx="905" cy="604" r="5" fill="#69a0ff"/><circle cx="735" cy="662" r="5" fill="#69a0ff"/><circle cx="905" cy="662" r="5" fill="#69a0ff"/>
+<rect x="72" y="740" width="150" height="38" rx="10" fill="#3379ef"/><text x="104" y="764" font-size="12" font-weight="700" fill="#fff">Stop protection</text>
+<rect x="236" y="740" width="130" height="38" rx="10" fill="#f0f3f8"/><text x="270" y="764" font-size="12" font-weight="700" fill="#5e6c80">● Record</text>
+</g>
+<g filter="url(#s)">
+<rect x="1080" y="110" width="376" height="694" rx="22" fill="#fff" stroke="#e0e5ee"/>
+<rect x="1106" y="138" width="40" height="40" rx="12" fill="#eef1ff"/><text x="1118" y="165" fill="#756fdb" font-size="22">✦</text>
+<text x="1160" y="157" font-size="16" font-weight="750" fill="#172235">Protection</text><text x="1160" y="177" font-size="11" fill="#8993a4">Precisely hide sensitive values.</text>
+<rect x="1106" y="204" width="324" height="68" rx="13" fill="#f3f7ff"/><text x="1124" y="230" font-size="13" font-weight="700" fill="#172235">Protected stream on</text><text x="1124" y="251" font-size="11" fill="#75839c">Share this preview, not your original tab.</text><circle cx="1405" cy="238" r="7" fill="#20b57d"/>
+<text x="1106" y="310" font-size="11" font-weight="800" letter-spacing="1.2" fill="#768195">AUTOMATICALLY HIDE</text>
+<text x="1120" y="354" font-size="14" font-weight="650" fill="#253247">Passwords</text><rect x="1370" y="337" width="48" height="26" rx="13" fill="#347bf2"/><circle cx="1405" cy="350" r="10" fill="#fff"/>
+<text x="1120" y="405" font-size="14" font-weight="650" fill="#253247">API tokens</text><rect x="1370" y="388" width="48" height="26" rx="13" fill="#347bf2"/><circle cx="1405" cy="401" r="10" fill="#fff"/>
+<text x="1120" y="456" font-size="14" font-weight="650" fill="#253247">Credit cards</text><rect x="1370" y="439" width="48" height="26" rx="13" fill="#347bf2"/><circle cx="1405" cy="452" r="10" fill="#fff"/>
+<line x1="1106" y1="492" x2="1430" y2="492" stroke="#edf0f5"/>
+<text x="1106" y="532" font-size="16" font-weight="750" fill="#172235">Manual blackouts</text><text x="1106" y="553" font-size="11" fill="#8993a4">Hide anything the detector missed.</text>
+<rect x="1106" y="580" width="324" height="45" rx="11" fill="#edf3ff" stroke="#dce8ff"/><text x="1209" y="608" fill="#2c70dc" font-size="13" font-weight="700">＋ Add blackout</text>
+<rect x="1106" y="639" width="102" height="42" rx="9" fill="#f6f8fb"/><text x="1130" y="665" fill="#617087" font-size="11" font-weight="700">− Remove</text>
+<rect x="1217" y="639" width="102" height="42" rx="9" fill="#f6f8fb"/><text x="1240" y="665" fill="#617087" font-size="11" font-weight="700">↶ Undo</text>
+<rect x="1328" y="639" width="102" height="42" rx="9" fill="#f6f8fb"/><text x="1350" y="665" fill="#617087" font-size="11" font-weight="700">Clear all</text>
+<rect x="1106" y="704" width="324" height="70" rx="12" fill="#eef5ff"/><text x="1125" y="731" font-size="11" font-weight="700" fill="#3f6ea8">Local detection · no cloud</text><text x="1125" y="752" font-size="10" fill="#6686ad">Your original webpage is never modified.</text>
+</g>
+</g></svg>
