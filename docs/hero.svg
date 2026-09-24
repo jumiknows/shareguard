@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+<title id="title">ShareGuard protected screen sharing</title>
+<desc id="desc">A host browser view remains unchanged while a separate audience view masks passwords, API tokens, and card numbers.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset=".55" stop-color="#14233e"/><stop offset="1" stop-color="#0a1221"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f8cff"/><stop offset="1" stop-color="#865cff"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000" flood-opacity=".28"/></filter>
+</defs>
+<rect width="1600" height="720" rx="36" fill="url(#bg)"/>
+<circle cx="1450" cy="85" r="230" fill="#4f8cff" opacity=".08"/>
+<circle cx="1250" cy="690" r="280" fill="#865cff" opacity=".09"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+  <g transform="translate(72 62)">
+    <rect width="78" height="78" rx="24" fill="url(#accent)"/>
+    <path d="M39 16 61 25v17c0 16-10 27-22 33-12-6-22-17-22-33V25z" fill="none" stroke="#fff" stroke-width="5"/>
+    <circle cx="39" cy="42" r="7" fill="#fff"/>
+    <text x="102" y="43" fill="#fff" font-size="48" font-weight="750">ShareGuard</text>
+    <text x="104" y="75" fill="#aebbd2" font-size="21">Privacy-preserving screen sharing for the browser</text>
+  </g>
+  <text x="76" y="195" fill="#d8e3f5" font-size="24" font-weight="650">You see everything.</text>
+  <text x="76" y="228" fill="#8fb8ff" font-size="24" font-weight="650">Your audience only sees what is safe to share.</text>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(70 275)">
+      <rect width="680" height="330" rx="24" fill="#f7f9fc"/>
+      <rect width="680" height="50" rx="24" fill="#e9edf4"/>
+      <rect y="28" width="680" height="22" fill="#e9edf4"/>
+      <circle cx="28" cy="24" r="7" fill="#ff605c"/><circle cx="51" cy="24" r="7" fill="#ffbd44"/><circle cx="74" cy="24" r="7" fill="#00ca4e"/>
+      <rect x="110" y="12" width="420" height="25" rx="12" fill="#fff"/>
+      <text x="130" y="30" fill="#607086" font-size="14">example.com/settings</text>
+      <text x="28" y="84" fill="#68778c" font-size="14" font-weight="700">YOUR VIEW · ORIGINAL</text>
+      <rect x="30" y="110" width="620" height="190" rx="16" fill="#fff" stroke="#dfe5ef"/>
+      <text x="56" y="148" fill="#152033" font-size="22" font-weight="700">Security settings</text>
+      <text x="56" y="190" fill="#59687c" font-size="16">Password</text>
+      <rect x="188" y="168" width="400" height="34" rx="9" fill="#f6f8fb" stroke="#dfe5ef"/>
+      <text x="205" y="190" fill="#25354d" font-size="15">demo-password-123</text>
+      <text x="56" y="236" fill="#59687c" font-size="16">API token</text>
+      <rect x="188" y="214" width="400" height="34" rx="9" fill="#f6f8fb" stroke="#dfe5ef"/>
+      <text x="205" y="236" fill="#25354d" font-size="15">sk_demo_51H9q3_example</text>
+      <text x="56" y="282" fill="#59687c" font-size="16">Card</text>
+      <rect x="188" y="260" width="400" height="34" rx="9" fill="#f6f8fb" stroke="#dfe5ef"/>
+      <text x="205" y="282" fill="#25354d" font-size="15">4242 4242 4242 4242</text>
+    </g>
+
+    <g transform="translate(850 275)">
+      <rect width="680" height="330" rx="24" fill="#f7f9fc"/>
+      <rect width="680" height="50" rx="24" fill="#e9edf4"/>
+      <rect y="28" width="680" height="22" fill="#e9edf4"/>
+      <circle cx="28" cy="24" r="7" fill="#ff605c"/><circle cx="51" cy="24" r="7" fill="#ffbd44"/><circle cx="74" cy="24" r="7" fill="#00ca4e"/>
+      <rect x="110" y="12" width="420" height="25" rx="12" fill="#fff"/>
+      <text x="130" y="30" fill="#607086" font-size="14">ShareGuard · Protected Preview</text>
+      <text x="28" y="84" fill="#3c8d6c" font-size="14" font-weight="700">AUDIENCE VIEW · PROTECTED</text>
+      <rect x="30" y="110" width="620" height="190" rx="16" fill="#fff" stroke="#dfe5ef"/>
+      <text x="56" y="148" fill="#152033" font-size="22" font-weight="700">Security settings</text>
+      <text x="56" y="190" fill="#59687c" font-size="16">Password</text>
+      <rect x="188" y="168" width="230" height="34" rx="8" fill="#121923"/>
+      <text x="56" y="236" fill="#59687c" font-size="16">API token</text>
+      <rect x="188" y="214" width="320" height="34" rx="8" fill="#121923"/>
+      <text x="56" y="282" fill="#59687c" font-size="16">Card</text>
+      <rect x="188" y="260" width="270" height="34" rx="8" fill="#121923"/>
+      <rect x="535" y="116" width="88" height="28" rx="14" fill="#dcf7eb"/>
+      <circle cx="553" cy="130" r="6" fill="#22b47d"/>
+      <text x="566" y="135" fill="#16865f" font-size="13" font-weight="700">Protected</text>
+    </g>
+  </g>
+
+  <path d="M774 435h52" stroke="#6fa4ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="m815 419 17 16-17 16" fill="none" stroke="#6fa4ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(75 640)" font-size="15">
+    <rect width="210" height="40" rx="20" fill="#ffffff10" stroke="#ffffff24"/><text x="24" y="26" fill="#dce8fa">Chrome Manifest V3</text>
+    <rect x="226" width="175" height="40" rx="20" fill="#ffffff10" stroke="#ffffff24"/><text x="250" y="26" fill="#dce8fa">Local processing</text>
+    <rect x="417" width="180" height="40" rx="20" fill="#ffffff10" stroke="#ffffff24"/><text x="442" y="26" fill="#dce8fa">Manual blackouts</text>
+    <rect x="613" width="205" height="40" rx="20" fill="#ffffff10" stroke="#ffffff24"/><text x="638" y="26" fill="#dce8fa">Navigation recovery</text>
+  </g>
+</g>
+</svg>
