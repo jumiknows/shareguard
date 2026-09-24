@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="extension/icons/icon128.png" alt="ShareGuard icon" width="96" />
+  <img src="docs/icon.svg" alt="ShareGuard icon" width="96" />
 </p>
 
 <h1 align="center">ShareGuard</h1>
@@ -60,7 +60,7 @@ The content script returns **geometry**, not a modified page. Studio captures th
 ## Studio
 
 <p align="center">
-  <img src="docs/studio.png" alt="ShareGuard Privacy Studio showing a protected audience preview" width="100%" />
+  <img src="docs/studio.svg" alt="ShareGuard Privacy Studio showing a protected audience preview" width="100%" />
 </p>
 
 The interface is intentionally simple: start protection, choose what ShareGuard detects, add manual blackouts when necessary, and share the Studio preview rather than the original tab.
