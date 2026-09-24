@@ -1,0 +1,21 @@
+name: PR Policy
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR title
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          if [[ ! "$TITLE" =~ ^(feat|fix|docs|test|refactor|chore|ci|perf|build|revert|spike)(\(.+\))?:\ .+ ]]; then
+            echo "PR titles should use Conventional Commit style, for example: feat: add custom detection rules"
+            exit 1
+          fi
