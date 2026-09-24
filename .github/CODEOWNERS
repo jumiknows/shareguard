@@ -1,0 +1,11 @@
+# Default ownership
+* @jumiknows
+
+# Privacy- and release-sensitive areas
+/.github/ @jumiknows
+/SECURITY.md @jumiknows
+/docs/architecture.md @jumiknows
+/extension/background.js @jumiknows
+/extension/scanner.js @jumiknows
+/extension/detector.js @jumiknows
+/extension/studio.js @jumiknows
