@@ -1,0 +1,13 @@
+{
+  "name": "shareguard",
+  "version": "0.8.0",
+  "private": true,
+  "description": "Privacy-preserving browser screen-sharing prototype.",
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:unit": "node tests/detector.test.cjs && node tests/background_recovery.test.cjs && node tests/background_navigation.test.cjs",
+    "test:browser": "python tests/browser_dom_smoke.py && python tests/browser_renderer_smoke.py && python tests/browser_navigation_smoke.py",
+    "check": "node --check extension/background.js && node --check extension/detector.js && node --check extension/scanner.js && node --check extension/studio.js && npm run test:unit"
+  },
+  "license": "MIT"
+}
