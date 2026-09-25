@@ -1,24 +1,41 @@
-## Summary
+## Problem
 
-What changed and why?
+What privacy, capture, masking, navigation, permission, or reliability problem does this address?
 
-## Validation
+Describe the failure mode or user-visible risk before the solution.
 
-How did you test it?
+## Approach
 
-## Privacy and security
+What changed, and why was this design chosen?
 
-Does this change affect capture, permissions, detection, masking, recording, navigation recovery, or any data leaving the browser?
+Explain browser API, frame, recovery, permission, storage, or threat-model decisions when relevant.
 
-## Known limitations
+## Verification
 
-What is still unsupported, uncertain, or intentionally out of scope?
+### Automated
+
+List unit, DOM, renderer, navigation, or other checks you ran.
+
+### Browser scenarios
+
+Describe the browser, page state, steps, expected result, and observed result for behavior that depends on Chromium.
+
+### Security or privacy evidence
+
+If the change affects masking or data exposure, state what sensitive information was tested and confirm that fictional data was used.
+
+## Risks and limitations
+
+What can still bypass detection, fail during navigation, behave differently across browsers, or expose information?
+
+## References
+
+Link relevant browser API documentation, security guidance, threat-model notes, or prior issues that support the implementation.
 
 ## Checklist
 
-- [ ] I used fictional data for tests, screenshots, and recordings.
-- [ ] `npm run check` passes locally.
-- [ ] Browser smoke tests pass for behavior I changed.
+- [ ] Fictional data was used for tests, screenshots, and recordings.
+- [ ] `npm run check` passes.
+- [ ] Browser smoke tests cover behavior I changed.
 - [ ] No secrets, browser profiles, or private recordings are committed.
-- [ ] Documentation is updated when behavior or limitations changed.
-- [ ] New frames still fail closed during navigation/recovery paths I touched.
+- [ ] New frames still fail closed on the recovery paths I touched.
