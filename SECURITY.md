@@ -1,44 +1,46 @@
-# Security Policy
+# Security
 
-ShareGuard is a privacy-focused MVP. Treat it as a research and portfolio project, not as a security boundary.
+ShareGuard is a privacy prototype, not a security boundary.
 
-## Reporting a security issue
+## Report a problem privately
 
-Please do not open a public issue for a vulnerability that could expose credentials, payment data, or other sensitive information.
+Do not open a public issue for a bug that could expose credentials, payment data or other sensitive information.
 
-Use GitHub's private vulnerability reporting for this repository when available. If that is not available, contact the repository owner privately.
+Use GitHub private vulnerability reporting when available. Otherwise contact the repository owner privately.
 
-Include:
+A useful report includes:
 
-- the affected ShareGuard version or commit;
-- browser and operating system;
-- a minimal reproduction using fictional data;
-- what an audience could see that should have been hidden;
-- whether the issue occurs during capture, navigation, detection, or rendering.
+- the affected version or commit
+- browser and operating system
+- a reproduction using fictional data
+- what the audience could see
+- whether the problem happened during capture, navigation, detection or rendering
 
-## Sensitive data rules
+## Never include real sensitive data
 
-Never commit or attach:
+Do not commit or attach:
 
-- real passwords, API keys, access tokens, cookies, or private keys;
-- real payment-card numbers or banking details;
-- private screenshots or recordings containing personal information;
-- browser profiles, session data, or exported credentials.
+- passwords
+- API keys or access tokens
+- cookies or private keys
+- payment or banking information
+- private screenshots or recordings
+- browser profiles or exported credentials
 
-Use only fictional test data in issues, tests, screenshots, and demos.
+Use fictional values for testing.
 
-## Privacy invariants
+## Privacy rules
 
-Changes should preserve these rules unless a design proposal explicitly changes the privacy model:
+ShareGuard should keep these properties unless a design change explicitly says otherwise:
 
-1. The source browser tab is not modified to create the audience mask.
-2. Supported detection and rendering run locally in the MVP.
-3. Detected secret values are not intentionally logged, persisted, or transmitted.
-4. During source navigation or scanner recovery, the audience view should fail closed rather than intentionally display a newly unchecked frame.
-5. Manual blackout regions affect only the protected audience output.
+1. The source tab is not modified to create the audience mask.
+2. Supported detection and rendering run locally.
+3. Detected values are not intentionally logged, stored or transmitted.
+4. Navigation holds the audience view until the new page can be checked.
+5. Manual blackouts affect only the protected audience output.
 
-## Scope and limitations
+## Limits
 
-ShareGuard cannot guarantee detection of every sensitive value. Browser chrome, built-in PDF viewers, images, video, canvas content, inaccessible cross-origin frames, and unusual secret formats may not be inspectable by the current MVP.
+The current scanner cannot inspect every rendered pixel. Images, video, canvas content, many PDFs, browser chrome and inaccessible frames can contain text that ShareGuard does not see.
 
-Do not rely on ShareGuard to protect real credentials or financial information.
+Always verify the protected output before a demo.

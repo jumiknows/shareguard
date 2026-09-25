@@ -1,48 +1,51 @@
 # Architecture
 
-ShareGuard keeps the host view and audience view separate.
+ShareGuard keeps the presenter's tab separate from the audience view.
 
-```text
-Source browser tab
-      |
-      | tabCapture
-      v
-ShareGuard Studio -------------------------+
-      |                                    |
-      | asks content script for geometry   | video frames
-      v                                    v
-DOM scanner -> deterministic detector -> protected canvas
-                                           |
-                                           v
-                                  audience preview / recording
-```
+## Data flow
+
+1. Chrome captures the selected browser tab.
+2. The page scanner checks visible DOM text and fields.
+3. The detector returns the sensitive text spans.
+4. The scanner converts those spans into screen coordinates.
+5. Studio draws the captured frame to a canvas.
+6. Studio covers the detected and manual regions.
+7. Only the protected canvas is intended for the audience.
 
 ## Components
 
 ### `background.js`
 
-Owns extension-level orchestration. It opens Studio, requests tab capture, validates the selected source tab, and helps recover the scanner after same-tab navigation.
+Opens Studio, manages the selected source tab, requests tab capture and reinstalls the scanner after full page navigation.
 
 ### `scanner.js`
 
-Runs as a content script on supported web pages. It inspects visible DOM content and returns rectangles for regions that should be masked. It does not modify the source page to create the audience view.
+Runs inside supported webpages. It inspects visible DOM content and returns mask rectangles.
+
+The scanner does not edit the webpage.
 
 ### `detector.js`
 
-Contains narrow, deterministic rules for the MVP. Current targets include password-like fields, recognizable API-token formats, and payment-card candidates that pass the Luhn checksum.
+Contains the deterministic rules for password values, known token formats and payment card candidates.
 
 ### `studio.js`
 
-Consumes the tab video stream, paints frames to a canvas, applies automatic and manual masks, handles privacy holds during navigation, and can record the protected canvas output.
+Owns the protected preview. It copies captured frames to a canvas, applies masks, handles manual blackouts and can record the protected result.
+
+## Navigation
+
+A full page navigation destroys the old content script.
+
+ShareGuard notices the navigation and puts the audience canvas into a privacy hold. The scanner is installed in the new document. Protected frames resume only after the new page can be checked.
 
 ## Trust boundary
 
-The protected canvas is the output intended for an audience. The original source tab remains visible to the host and must not be treated as safe to share directly.
+The protected canvas is the intended audience output.
 
-## Fail-closed navigation
+The original browser tab is never considered safe to share directly.
 
-Navigation destroys the previous page's content-script context. ShareGuard listens for source-tab navigation, places the audience preview into a privacy hold, reconnects the scanner on the new document, and resumes only after the new page can be inspected.
+## Current gaps
 
-## Current limitations
+The DOM path cannot inspect text inside images, video, canvas content, many PDFs, browser chrome or inaccessible frames.
 
-The DOM scanner cannot inspect every rendered pixel. Images, browser chrome, many PDFs, canvas/video content, inaccessible cross-origin frames, and unsupported browser pages require a different detection path. OCR and broader classifiers are roadmap items, not part of the current privacy guarantee.
+Future detection should preserve the same local-first privacy model.
